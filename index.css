@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 body{
-    background-image: url(/images/kelpbg.jpg);
-    background-color: #cccccc;
+    background-image: url(images/kelpbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
