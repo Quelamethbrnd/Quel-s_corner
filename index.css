@@ -1,15 +1,40 @@
-body{
-    background-image:url(images/kelpbg.jpg);
+/* 1. Global Page Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
 }
 
-div.square{
-    display: inline-block;
-    width: 800px;
-    height:auto ;
-    position: fixed;
-    align-self: center;
+/* 2. Fixed Full-Screen Background */
+body {
+    background-image: url("images/kelpbg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps image locked in place */
+    
+    /* Layout: Stacks content top-to-bottom naturally */
+    display: flex;
+    flex-direction: column;
 }
 
-div#d1{
-    background-image: background;
+/* 3. Base Styles for your HTML Elements */
+header {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    color: white; /* Makes text readable over dark/pink areas */
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: deeppink;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
 }
